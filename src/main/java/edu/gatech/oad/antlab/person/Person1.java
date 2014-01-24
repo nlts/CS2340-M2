@@ -32,7 +32,7 @@ public class Person1 {
 	private String calc(String input) {
 	  //Person 1 put your implementation here
 
-	  return input.substring(2)+input.substring(0,2);
+	  return input.substring(2) + input.substring(0,2);
 	}
 	
 	/**
