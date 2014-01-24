@@ -1,3 +1,4 @@
+import java.util.*;
 package edu.gatech.oad.antlab.person;
 
 /**
@@ -30,8 +31,19 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+		Random rand = new Random();
+		String temp = "";
+		int num;
+		ArrayList<Character> alist =new ArrayList<Character>();
+    for(int i=0;i<input.length();i++) {
+        alist.add(input.charAt(i));
+    }
+		while (!alist.isEmpty()) {
+			num = rand.nextInt(alist.size());
+			temp += alist.get(num);
+			alist.remove(num);
+		}
+		return temp;
 	}
 	/**
 	 * Return a string rep of this object
