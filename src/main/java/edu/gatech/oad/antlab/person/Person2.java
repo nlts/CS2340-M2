@@ -1,5 +1,5 @@
-import java.util.*;
 package edu.gatech.oad.antlab.person;
+import java.util.*;
 
 /**
  *  A simple class for person 2
