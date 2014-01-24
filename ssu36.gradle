@@ -1,0 +1,22 @@
+//Set default tasks
+defaultTasks 'buildJar', 'jar'
+
+//Import java related tasks
+apply plugin: 'java'
+
+dependencies {
+	compile files('lib/resources.jar')
+}
+
+//Manfiest properties
+sourceCompatibility = 1.7
+version = '1.0'
+
+//.jar manifest
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'Building M2', 
+					'Implementation-Version': version, 
+					'Main-Class': 'AntLabMain'
+	}
+}
