@@ -31,7 +31,8 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+
+	  return input.substring(2) + input.substring(0,2);
 	}
 	
 	/**
@@ -45,5 +46,4 @@ public class Person1 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
-
 }
