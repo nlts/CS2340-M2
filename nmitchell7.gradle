@@ -1,3 +1,6 @@
+//Nayomi Mitchell
+//Gradle File
+
 //Import java tasks
 apply plugin: 'java'
 
@@ -22,7 +25,7 @@ jar {
     manifest {
         attributes 'Implementation-Title': 'build-M2',
                 'Implementation-Version': version,
-                'Main-Class': 'AntLabMain'
+                'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path': '../../lib/resources.jar'
     }
 }
 
