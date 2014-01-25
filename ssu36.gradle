@@ -18,5 +18,6 @@ jar {
 		attributes 'Implementation-Title': 'Building M2', 
 					'Implementation-Version': version, 
 					'Main-Class': 'AntLabMain'
+					'Class-Path': '../../lib/resources.jar'
 	}
 }
