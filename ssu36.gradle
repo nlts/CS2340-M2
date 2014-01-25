@@ -14,10 +14,11 @@ version = '1.0'
 
 //.jar manifest
 jar {
-	manifest {
-		attributes 'Implementation-Title': 'Building M2', 
-					'Implementation-Version': version, 
-					'Main-Class': 'AntLabMain'
-					'Class-Path': '../../lib/resources.jar'
-	}
+   manifest {
+       attributes 'Implementation-Title': 'build-M2',
+               'Implementation-Version': version,
+               'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain', 
+			   'Class-Path': '../../lib/resources.jar'
+   }
+}
 }
