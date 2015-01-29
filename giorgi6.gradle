@@ -28,11 +28,11 @@ sourceCompatibility = 1.7
 version = '1.0'
 
 //Create manifest for .jar file
-jar {
+jar{
     manifest {
-        attributes 'Implementation-Title': 'build-M2',
-                'Implementation-Version': version,
-                'Main-Class': 'AntLabMain'
-    }
+       attributes 'Implementation-Title': 'build-M2',
+               'Implementation-Version': version,
+               'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain', 
+			   'Class-Path': '../../lib/resources.jar'
+   }
 }
-
